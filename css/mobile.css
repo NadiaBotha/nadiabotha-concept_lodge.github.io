@@ -15,6 +15,11 @@
     border-bottom:#6C6757 dotted 1px;
 }
 
+#showcase h1 {
+    padding-top:100px;
+}
+
+
 #home-info .info-img {
     display: none;
 }
