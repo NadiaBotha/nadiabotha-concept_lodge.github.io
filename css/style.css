@@ -1,0 +1,346 @@
+/*GENERAL*/
+
+/*No padding and borders to be added to total widths and heights, remove
+default padding and margin.*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;   
+}
+
+/*Remove the underlining from all referneces.*/
+a {
+    text-decoration: none;
+}
+
+/*Change the font of the pages.*/
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+/*UTILITY*/
+
+/*Container used to move all of the content to the midlle, especially if the 
+page is very large*/
+.container{
+    max-width:1200px;
+    margin:auto;
+    overflow:auto;
+    padding:0 20px;
+}
+
+.primary-text{
+    color:#7E7963
+}
+
+.secondary-text{
+    color:#BBB291;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    border:none;
+    text-align: center;
+    border-radius:5px;
+    font-size:1.2rem;
+}
+
+.btn-primary {
+    background: #7E7963;
+    color:#2e2610;
+}
+
+.btn-primary:hover{
+    background: #BBB291;
+}
+
+.btn-light {
+    background: #BBB291;
+    color:#2e2610;
+}
+
+.btn-light:hover{
+    background: #7E7963;
+}
+
+.box {
+    float:left;
+    width:33.33%;
+    height:100%;
+    padding:40px 30px;
+    text-align: center;
+}
+
+.primary-box{
+    background: #BBB291;
+    color:#2e2610;
+}
+
+.light-box {
+    background:#7E7963;
+    color:#2e2610;
+}
+
+.clr {
+    clear:both;
+}
+
+/*NAVBAR*/
+
+/*Set the background of the navbar and the color for all non-reference text.*/
+#navbar {
+    background: #2e2610;
+    color:white;
+}
+
+/*Change the color of al references to white.*/
+#navbar a {
+    color:white;
+}
+
+/*Move the logo and company name to left, with the logo on the top and 
+the company name at the bottom.*/
+#navbar .logo-container {
+    float:left;
+    padding:20px 0;
+}
+
+/*Change the CL heading one to a different font and rezise the font.*/
+#navbar .logo-container h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size:2.0rem;    
+}
+
+
+/*Move the verical list to the right and remove bullets.*/
+#navbar ul {
+    float:right;
+    list-style: none;
+}
+
+/*Move the list items horizontally*/
+#navbar ul li{
+    float:left;
+}
+
+/*Cannot add padding to an inline element - convert to inline block*/
+#navbar ul li a {
+    display:block;
+    padding:44px 20px;  
+    border:none; 
+    font-size:1.2rem;
+}
+
+/*Change the color of the references when hovered over and color the current
+page selected.*/
+#navbar ul li a:hover,
+#navbar .current{
+    background: #BBB291;
+    color: #2e2610;
+    border-left:1px solid #2e2610;
+    border-right:1px solid #2e2610;
+}
+
+/*SHOWCASE*/
+
+#showcase {
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
+    color:white;
+    height:500px;
+    overflow:auto;
+    text-align:center;
+}
+
+#showcase h1 {
+    font-size:2.5rem;
+    padding-top:150px;
+
+}
+
+#showcase p {
+    font-size:1.3rem;
+
+}
+
+#home-info{
+    background: #2e2610;
+    color:white;
+    overflow:hidden;
+    height:400px;
+    
+}
+
+#home-info .info-content {
+    float:left;
+    width:50%;
+    min-height:100%;
+    padding:70px 20px;
+    text-align: center;
+    overflow:hidden;
+    
+}
+
+#home-info .info-img{
+    background:url('../img/mountains.jpg') no-repeat center center/cover;
+    min-height:80%;
+    float:right;
+    width:40%;
+    margin-top:40px;
+    margin-right:20px;
+}
+
+#features {
+    height:250px;
+}
+
+/*ABOUT-INFO*/
+
+#about-info{
+    background: #7E7963;
+    height:fit-content;
+    padding:10px 0;
+    overflow: hidden;
+}
+
+#about-info .about-content{
+    float:left;
+    width:50%;
+    color:white;
+    text-align: center;
+    padding-top:40px;
+}
+
+#about-info .about-content h1 {
+    font-size:2.5rem;
+}
+
+#about-info .about-content a:hover{
+    background: #2e2610;
+    color:#BBB291;
+}
+
+
+#about-info .about-img {
+    float:right;
+    width:50%;
+}
+
+
+#about-info .image-container img{
+    display: block;
+    margin: auto;
+    max-width:90%;
+}
+
+#about-info .image-container p{
+    margin:0;
+    font-family: 'Architects Daughter', cursive;
+    font-size:2rem;
+}
+
+#about-info .image-container{
+    padding-top:45px;
+    margin: 40px 0;
+    margin-left:20px;
+    background: #FFFAF0;
+    text-align: center;
+}
+
+/*Testimonial*/
+#testimonials {
+    background: url('../img/testimonial_background.jpg') no-repeat center center/cover;
+    height:600px;
+}
+
+#testimonials h1{
+    text-align: center;
+    color: #2e2610;
+}
+
+#testimonials .testimonial{
+    background: #BBB291;
+    height:150px;
+    margin:30px;
+    color:#2e2610;
+    border-radius:10px;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+#testimonials .testimonial img{
+    float:left;
+    width:100px;
+    padding:10px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+
+#testimonials .testimonial h3{
+    padding-top:20px;
+    text-align: center;
+}
+
+
+
+
+/*CONTACT US*/
+
+#form-section {
+    background: #FFFAF0;
+}
+
+
+#form-section h1 {
+   font-size:2.5rem; 
+   color:#2e2610;
+   margin-top:20px;
+}
+
+#form-section p{
+    margin-top:10px;
+    font-size:1.5rem;
+    color:#2e2610;
+}
+
+#form-section .form-box label{
+    display: block;
+    margin-bottom:5px;
+    font-size:1.2rem;
+    color:#2e2610;
+}
+
+#form-section .form-box {
+    margin-bottom:20px;
+}
+
+#form-section .form-box input,
+#form-section .form-box textarea {
+    width:100%;
+    padding:5px 0;
+    border:3px solid #BBB291;
+    border-radius: 5px;;
+}
+
+#contact-info {
+    background: #BBB291;
+    color:white;
+}
+
+
+/*FOOTER*/
+#page-footer {
+    background: #2e2610;
+    text-align: center;
+    color:white;
+}
+
+#page-footer p{
+    margin:0;
+    padding:20px;
+}
